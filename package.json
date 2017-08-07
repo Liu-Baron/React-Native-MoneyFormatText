@@ -1,0 +1,22 @@
+{
+  "name": "react-native-moneyformattext",
+  "version": "1.0.0",
+  "description": "这是一个金额格组件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wslcsok/React-Native-MoneyFormatText.git"
+  },
+  "keywords": [
+    "金额，格式化"
+  ],
+  "author": "Lcs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wslcsok/React-Native-MoneyFormatText/issues"
+  },
+  "homepage": "https://github.com/wslcsok/React-Native-MoneyFormatText#readme"
+}
