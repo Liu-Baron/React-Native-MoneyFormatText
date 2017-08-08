@@ -11,6 +11,7 @@ import {
     Text,
     View
 } from 'react-native';
+
 import MoneyFormatText from "react-native-moneyformattext";
 export default class example extends Component {
     render() {
