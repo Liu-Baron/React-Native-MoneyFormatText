@@ -1,10 +1,13 @@
 {
   "name": "react-native-moneyformattext",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "这是一个金额格组件",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "ios": "react-native run-ios",
+    "android": "react-native run-android",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -19,24 +22,18 @@
     "url": "https://github.com/wslcsok/React-Native-MoneyFormatText/issues"
   },
   "homepage": "https://github.com/wslcsok/React-Native-MoneyFormatText",
-  "scripts": {
-		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"ios": "react-native run-ios",
-		"android": "react-native run-android",
-		"test": "jest"
-	},
-	"dependencies": {
-		"react": "16.0.0-alpha.12",
-		"react-native": "0.47.1",
-		"prop-types": "^15.5.10"
-	},
-	"devDependencies": {
-		"babel-jest": "20.0.3",
-		"babel-preset-react-native": "2.1.0",
-		"jest": "20.0.4",
-		"react-test-renderer": "16.0.0-alpha.12"
-	},
-	"jest": {
-		"preset": "react-native"
-	}
+  "dependencies": {
+    "react": "16.0.0-alpha.12",
+    "react-native": "0.47.1",
+    "prop-types": "^15.5.10"
+  },
+  "devDependencies": {
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "2.1.0",
+    "jest": "20.0.4",
+    "react-test-renderer": "16.0.0-alpha.12"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
 }
