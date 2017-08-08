@@ -11,20 +11,17 @@ import {
     Text,
     View
 } from 'react-native';
-import MoneyFormatText from "./index";
-
+import MoneyFormatText from "react-native-moneyformattext";
 export default class example extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <MoneyFormatText text="1200000" />
-                <Text style={styles.instructions}>
-                    To get started, edit index.android.js
-                </Text>
-                <Text style={styles.instructions}>
-                    Double tap R on your keyboard to reload,{'\n'}
-                    Shake or press menu button for dev menu
-                </Text>
+                <MoneyFormatText text="1200000" bigTextFontSize={20} smallTextFontSize={12} hasRMB={true} RMB="$"/>
+                <MoneyFormatText text="￥1200000" bigTextFontSize={20} smallTextFontSize={12} hasRMB={true}/>
+                <MoneyFormatText text="￥1200000" bigTextFontSize={20} smallTextFontSize={12} hasRMB={false} RMB="$"/>
+                <MoneyFormatText text="￥1200000" bigTextFontSize={20} smallTextFontSize={12} hasRMB={true} RMB="$" textColor="red"/>
+                <MoneyFormatText text="￥1200000" bigTextFontSize={20} smallTextFontSize={12} hasRMB={true} RMB="$" textColor="black"/>
+                <MoneyFormatText text="￥1200000" bigTextFontSize={20} smallTextFontSize={12} hasRMB={true} RMB="$"/>
             </View>
         );
     }
