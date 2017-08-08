@@ -9,7 +9,7 @@ import {
     Text,
 } from 'react-native';
 
-export class MoneyFormatText extends Component {
+export default class MoneyFormatText extends Component {
 
     constructor(props) {
         super(props);
