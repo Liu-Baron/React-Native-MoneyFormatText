@@ -13,9 +13,9 @@ import MoneyFormatText from "react-native-moneyformattext";
 <MoneyFormatText text="1200000" bigTextFontSize={20} smallTextFontSize={12} hasRMB={true} RMB="$"/>
 <MoneyFormatText text="￥1200000" bigTextFontSize={20} smallTextFontSize={12} hasRMB={true}/>
 <MoneyFormatText text="￥1200000" bigTextFontSize={20} smallTextFontSize={12} hasRMB={false} RMB="$"/>
-<MoneyFormatText text="￥1200000" bigTextFontSize={20} smallTextFontSize={12} hasRMB={true} RMB="$" textColor="red"/>
-<MoneyFormatText text="￥1200000" bigTextFontSize={20} smallTextFontSize={12} hasRMB={true} RMB="$" textColor="black"/>
-<MoneyFormatText text="￥1200000" bigTextFontSize={20} smallTextFontSize={12} hasRMB={true} RMB="$"/>
+<MoneyFormatText text="$1200000" bigTextFontSize={20} smallTextFontSize={12} hasRMB={true} RMB="￥" textColor="red"/>
+<MoneyFormatText text="￥1200000" bigTextFontSize={20} smallTextFontSize={12} hasRMB={true} RMB="￥" textColor="black"/>
+<MoneyFormatText text="$1200000" bigTextFontSize={20} smallTextFontSize={12} hasRMB={true} RMB="￥"/>
 
 ```
 
