@@ -1,6 +1,6 @@
 {
   "name": "react-native-moneyformattext",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "这是一个金额格组件",
   "main": "index.js",
   "scripts": {
