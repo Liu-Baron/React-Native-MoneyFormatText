@@ -23,26 +23,27 @@ export class MoneyFormatText extends Component {
         smallTextFontSize: Text.propTypes.number,
         textStyle: Text.propTypes.style,
         status: PropTypes.string,
-        hasRMB: PropTypes.bool,
-        RMB: PropTypes.string,
+        hasSymbol: PropTypes.bool,
+        symbol: PropTypes.string,
     };
 
     static defaultProps = {
         textColor: '#E51111',
         text: '',
         status: "money",
-        RMB: "￥",
-        hasRMB: true,
+        symbol: "￥",
+        hasSymbol: true,
+        decimalGravity: "top",
     };
 
     render() {
         let text = this.props.text;
         if (this.props.status === "money") {
             let style = this.props.style;
-            let RMB = this.props.RMB;
+            let symbol = this.props.symbol;
             let start = text.substring(0, 1);
             let strs = text.split('.');
-            let moneyInteger = start === RMB || !/^([0-9]|[\-]|[+])+$/.test(start) ? text.substring(1, strs[0].length) : strs[0];
+            let moneyInteger = start === symbol || !/^([0-9]|[\-]|[+])+$/.test(start) ? text.substring(1, strs[0].length) : strs[0];
             let l = moneyInteger.length;
             let t = "";
             if (moneyInteger.indexOf(",") > 0 || l < 4) {
@@ -56,9 +57,9 @@ export class MoneyFormatText extends Component {
             return (
                 <Text style={[styles.smallText, style, {
                     color: this.props.textColor,
-                    fontSize: this.props.smallTextFontSize ? this.props.smallTextFontSize : 12
+                    fontSize: this.props.smallTextFontSize ? this.props.smallTextFontSize : 12,
                 }]}>
-                    {this.props.hasRMB ? RMB : ''}
+                    {this.props.hasSymbol ? symbol : ''}
                     <Text style={[styles.bigText, {
                         color: this.props.textColor,
                         fontSize: this.props.bigTextFontSize ? this.props.bigTextFontSize : 25
