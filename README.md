@@ -32,8 +32,8 @@ bigTextFontSize  | number | Yes      |     25    | big fontSize for one of these
 smallTextFontSize| number | Yes      |     12    | small fontSize for one of these parts in text
 textStyle        | style  | Yes      |           | style for text when status!="money" (just normal text)
 status           | string | Yes      |  "money"  | if status="money" show formatted money,else show normal text
-hasRMB           | bool   | Yes      |   true    | if true,will show RMB
-RMB              | string | Yes      |    "￥"   | the symbol of money
+hasSymbol           | bool   | Yes      |   true    | if true,will show RMB
+symbol              | string | Yes      |    "￥"   | the symbol of money
 
 ## To Do
 
